@@ -1829,3 +1829,31 @@ button,
         transition: none;
     }
 }
+
+
+/* HERO BUTTONS — SMALL SCREENS */
+
+
+/* COMPACT HERO BUTTONS ON MOBILE */
+
+@media (max-width: 480px) {
+    .hero-actions {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 0;
+        min-width: 0;
+        min-height: 38px;
+        padding: 9px 5px;
+        font-size: 0.72rem;
+        line-height: 1.2;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
