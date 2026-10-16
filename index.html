@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NextGen Tech Academy | Learn. Build. Grow.</title>
+
+    <meta
+        name="description"
+        content="Learn practical technology skills with NextGen Tech Academy. Explore web development, build real projects, and grow your future in tech."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <!-- Website header -->
+    
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="#home" class="logo">
+                <img src="images/NextGen_Logo.png" alt="NextGen Tech Academy logo">
+                <span>NextGen Tech Academy</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="main-nav"
+                id="main-navigation"
+                aria-label="Main navigation">
+
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#learning">Free Learning</a>
+                <a href="#about">About</a>
+                <a href="#enrollment">Enroll</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#courses" class="btn btn-primary header-cta">
+                Start Learning
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Homepage hero section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <p class="eyebrow">
+                    DISCOVER. LEARN. BUILD.
+                </p>
+
+                <h1>
+                    Your Future in Tech
+                    <span>Starts Here.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Learn practical tech skills, build real-world
+                    projects, and develop the confidence to create
+                    your place in the digital world.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">
+                        Explore Courses
+                    </a>
+
+                    <a href="#learning" class="btn btn-secondary">
+                        Learn for Free
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    Practical learning. Real projects. Endless possibilities.
+                </p>
+
+            </div>
+        </section>
+
+        
+        <!-- COURSES SECTION -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">LEARN. PRACTICE. GROW.</p>
+                    <h2>Choose Your <span>Learning Path</span></h2>
+                    <p>
+                        Start with the fundamentals, build practical skills,
+                        and turn what you learn into real projects.
+                    </p>
+                </div>
+
+                <div class="courses-carousel">
+
+                    <button
+                        class="carousel-arrow carousel-prev"
+                        type="button"
+                        aria-label="Previous courses">
+                        &#10094;
+                    </button>
+
+                    <div class="courses-grid" id="courses-track">
+
+                        <!-- HTML & CSS -->
+                        <article class="course-card">
+                            <div class="course-card-icon" aria-hidden="true">
+                                &lt;/&gt;
+                            </div>
+
+                            <p class="course-level">BEGINNER FRIENDLY</p>
+                            <h3>HTML &amp; CSS Fundamentals</h3>
+
+                            <p>
+                                Learn how websites are structured and styled.
+                                Build your first web pages from scratch.
+                            </p>
+
+                            <ul>
+                                <li>HTML page structure</li>
+                                <li>CSS styling and layouts</li>
+                                <li>Responsive web design</li>
+                            </ul>
+
+                            <a href="#learning" class="course-link">
+                                Start Learning <span aria-hidden="true">→</span>
+                            </a>
+                        </article>
+
+                        <!-- JAVASCRIPT -->
+                        <article class="course-card">
+                            <div class="course-card-icon" aria-hidden="true">
+                                JS
+                            </div>
+
+                            <p class="course-level">BUILD INTERACTIVE WEBSITES</p>
+                            <h3>JavaScript Programming</h3>
+
+                            <p>
+                                Bring your websites to life by learning the
+                                fundamentals of programming with JavaScript.
+                            </p>
+
+                            <ul>
+                                <li>Variables and data types</li>
+                                <li>Functions and logic</li>
+                                <li>Interactive web features</li>
+                            </ul>
+
+                            <a href="#learning" class="course-link">
+                                Start Learning <span aria-hidden="true">→</span>
+                            </a>
+                        </article>
+
+                        <!-- FULL WEB DEVELOPMENT -->
+                        <article class="course-card featured-course">
+                            <div class="course-card-icon" aria-hidden="true">
+                                &lt;/&gt;
+                            </div>
+
+                            <p class="course-level">PRACTICAL LEARNING</p>
+                            <h3>Full Web Development</h3>
+
+                            <p>
+                                Follow a structured learning path and combine
+                                your skills to create complete web projects.
+                            </p>
+
+                            <ul>
+                                <li>HTML, CSS and JavaScript</li>
+                                <li>Hands-on projects</li>
+                                <li>Guided learning and practice</li>
+                            </ul>
+
+                            <a href="#contact" class="course-link">
+                                Enquire About Classes
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </article>
+                    </div>
+                    
+                    <button
+                        class="carousel-arrow carousel-next"
+                        type="button"
+                        aria-label="Next courses">
+                        &#10095;
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- FREE LEARNING HUB -->
+        <section class="learning-section" id="learning">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</p>
+                    <h2>Learn Tech for <span>Free</span></h2>
+                    <p>
+                        Explore our video lessons, learn at your own pace,
+                        and start building practical technology skills.
+                    </p>
+                </div>
+
+                <div class="learning-grid">
+
+                    <!-- VIDEO 1 -->
+                    <article class="learning-card">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/v1fhZlAm4RM"
+                                title="NextGen Tech Academy - Lesson 1"
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="learning-card-content">
+                            <p class="video-label">HTML FULL COURSE FOR BEGINNERS</p>
+                            <h3>Explore Our First Lesson</h3>
+                            <p>
+                                Start exploring practical technology lessons
+                                from NextGen Tech Academy.
+                            </p>
+                            <a
+                                href="https://youtu.be/v1fhZlAm4RM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="course-link">
+                                Watch on YouTube <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- VIDEO 2 -->
+                    <article class="learning-card">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/cUryNBkzB-w"
+                                title="NextGen Tech Academy - Lesson 2"
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="learning-card-content">
+                            <p class="video-label">CSS FULL COURSE FOR BEGINNERS</p>
+                            <h3>Continue Your Learning</h3>
+                            <p>
+                                Discover more lessons and keep developing
+                                your technology skills.
+                            </p>
+                            <a
+                                href="https://youtu.be/cUryNBkzB-w"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="course-link">
+                                Watch on YouTube <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- JAVASCRIPT VIDEO -->
+                    <article class="learning-card">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/_rTu291Ugzk"
+                                title="Introduction to JavaScript - NextGen Tech Academy"
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="learning-card-content">
+                            <p class="video-label">JAVASCRIPT FOR BEGINNERS</p>
+                            <h3>Introduction to JavaScript</h3>
+                            <p>
+                                Learn about variables, data types,
+                                concatenation, template literals, and
+                                performing calculations.
+                            </p>
+                            <a
+                                href="https://youtu.be/_rTu291Ugzk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="course-link">
+                                Watch on YouTube <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="learning-cta">
+                    <p>Want more lessons and tutorials?</p>
+                    <a
+                        href="https://youtube.com/@nextgentechacademywiz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary">
+                        Visit Our YouTube Channel
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <!-- ABOUT NEXTGEN TECH ACADEMY -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-content">
+                        <p class="eyebrow">GET TO KNOW US</p>
+
+                        <h2>
+                            More Than Lessons.
+                            <span>A Future You Can Build.</span>
+                        </h2>
+
+                        <p class="about-intro">
+                            At NextGen Tech Academy, we believe technology
+                            should be something you can understand, create
+                            with, and use to shape your future.
+                        </p>
+
+                        <p>
+                            Whether you're just getting started, changing
+                            careers, or strengthening your existing skills,
+                            we're here to help you take the next step.
+                        </p>
+
+                        <p>
+                            Our approach goes beyond watching tutorials.
+                            We focus on practical learning, hands-on
+                            projects, and building the confidence to turn
+                            ideas into reality.
+                        </p>
+
+                        <a href="#courses" class="btn btn-primary">
+                            Explore Our Courses
+                        </a>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <div class="highlight-icon" aria-hidden="true">
+                                &lt;/&gt;
+                            </div>
+                            <div>
+                                <h3>Practical Skills</h3>
+                                <p>
+                                    Learn concepts you can apply to
+                                    real technology projects.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-highlight">
+                            <div class="highlight-icon" aria-hidden="true">
+                                ✦
+                            </div>
+                            <div>
+                                <h3>Project-Based Learning</h3>
+                                <p>
+                                    Turn what you learn into projects
+                                    you can build and improve.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-highlight">
+                            <div class="highlight-icon" aria-hidden="true">
+                                ↗
+                            </div>
+                            <div>
+                                <h3>Room to Grow</h3>
+                                <p>
+                                    Develop your skills step by step
+                                    and explore new areas of tech.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about-mission">
+                    <p class="eyebrow">OUR MISSION</p>
+                    <h3>
+                        Help people discover their place in tech,
+                        learn practical skills, and build real projects.
+                    </h3>
+                    <p class="mission-tagline">
+                        Discover. Learn. Build.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- PAID CLASS ENROLLMENT -->
+        <section class="enrollment-section" id="enrollment">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">TAKE THE NEXT STEP</p>
+                    <h2>Start Your <span>Journey Into Tech</span></h2>
+                    <p>
+                        Ready to learn practical skills and build real
+                        projects? Tell us a little about yourself.
+                        We'll contact you with the next steps.
+                    </p>
+                </div>
+
+                <div class="enrollment-layout">
+
+                    <!-- ENROLLMENT INFORMATION -->
+                    <div class="enrollment-info">
+                        <p class="eyebrow">LEARN. BUILD. GROW.</p>
+                        <h3>Your future in tech starts with one step.</h3>
+
+                        <p>
+                            Whether you're a complete beginner or already
+                            have some experience, we'll help you explore
+                            the right learning path.
+                        </p>
+
+                        <div class="enrollment-benefit">
+                            <span aria-hidden="true">01</span>
+                            <div>
+                                <h4>Tell us about yourself</h4>
+                                <p>Share your interests and learning goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="enrollment-benefit">
+                            <span aria-hidden="true">02</span>
+                            <div>
+                                <h4>We'll reach out</h4>
+                                <p>We'll contact you about your chosen course.</p>
+                            </div>
+                        </div>
+
+                        <div class="enrollment-benefit">
+                            <span aria-hidden="true">03</span>
+                            <div>
+                                <h4>Get ready to build</h4>
+                                <p>Learn about the class schedule and enrollment process.</p>
+                            </div>
+                        </div>
+
+                        <p class="enrollment-note">
+                            Submitting this form is an inquiry, not a payment
+                            or confirmation of enrollment.
+                        </p>
+                    </div>
+
+                    <!-- REGISTRATION FORM -->
+                    <div class="enrollment-form-card">
+                        <h3>Student Registration</h3>
+                        <p class="form-intro">
+                            Fill in your details and we'll take it from there.
+                        </p>
+
+                        <form
+                            id="enrollment-form"
+                            action="https://formspree.io/f/mwlvaqyn"
+                            method="POST">
+
+                            <div class="form-field">
+                                <label for="student-name">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="student-name"
+                                    name="full_name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="student-email">Email Address *</label>
+                                <input
+                                    type="email"
+                                    id="student-email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="student-phone">WhatsApp Number *</label>
+                                <input
+                                    type="tel"
+                                    id="student-phone"
+                                    name="whatsapp_number"
+                                    placeholder="Include your country code"
+                                    autocomplete="tel"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="student-course">Course of Interest *</label>
+                                <select
+                                    id="student-course"
+                                    name="course"
+                                    required>
+                                    <option value="">Choose a course</option>
+                                    <option value="HTML and CSS">
+                                        HTML &amp; CSS Fundamentals
+                                    </option>
+                                    <option value="JavaScript">
+                                        JavaScript Programming
+                                    </option>
+                                    <option value="Full Web Development">
+                                        Full Web Development
+                                    </option>
+                                    <option value="Other">
+                                        Other / Not Sure Yet
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="student-level">Your Current Level *</label>
+                                <select
+                                    id="student-level"
+                                    name="experience_level"
+                                    required>
+                                    <option value="">Select your level</option>
+                                    <option value="Complete beginner">
+                                        Complete beginner
+                                    </option>
+                                    <option value="Basic knowledge">
+                                        I know a few basics
+                                    </option>
+                                    <option value="Some experience">
+                                        I have some experience
+                                    </option>
+                                    <option value="Career switcher">
+                                        I'm switching careers
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="student-goals">
+                                    What do you want to achieve?
+                                </label>
+                                <textarea
+                                    id="student-goals"
+                                    name="learning_goals"
+                                    rows="4"
+                                    placeholder="Tell us about your goals (optional)"></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary enrollment-submit">
+                                Submit Registration Request
+                                <span aria-hidden="true">→</span>
+                            </button>
+
+                            <p id="form-status" role="status" aria-live="polite"></p>
+
+                            <p class="form-privacy">
+                                Your information will be used to respond
+                                to your enrollment inquiry.
+                            </p>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Website footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <p>
+                &copy; <span id="current-year">2026</span>
+                NextGen Tech Academy.
+                Learn. Build. Grow.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
