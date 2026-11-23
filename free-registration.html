@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free Course Registration | N3xGen Tech Academy</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <meta name="description" content="Register for free technology courses at N3xGen Tech Academy. Learn practical skills and build real projects.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="images/NextGen_Logo.png" alt="NextGen Tech Academy logo">
+                <span>N3xGen Tech Academy</span>
+            </a>
+
+            <a href="index.html" class="btn btn-primary">
+                Back to Website
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- FREE COURSE REGISTRATION -->
+    <section class="free-registration-section">
+
+        <div class="free-registration-container">
+
+            <div class="free-registration-intro">
+
+                <p class="course-level">LEARN FOR FREE • BUILD REAL SKILLS</p>
+
+                <h1>Your Journey Into Tech Starts Here!</h1>
+
+                <p>
+                    Take your first step into technology with N3xGen Tech Academy.
+                    Register for our free training sessions, learn practical skills,
+                    and start building real projects.
+                </p>
+
+                <div class="free-registration-benefits">
+                    <p>✓ Beginner-friendly lessons</p>
+                    <p>✓ Practical, hands-on learning</p>
+                    <p>✓ Supportive learning community</p>
+                </div>
+
+            </div>
+
+
+            <!-- REGISTRATION FORM -->
+            <div class="free-registration-form-card">
+
+                <h2>Free Course Registration</h2>
+
+                <p>Fill in your details to get started.</p>
+
+                <form id="free-registration-form"
+                    action="https://formspree.io/f/xaeollgr"
+                    method="POST">
+
+                    <div class="form-group">
+                        <label for="student-name">Full Name</label>
+                        <input
+                            type="text"
+                            id="student-name"
+                            name="full_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="student-email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-whatsapp">WhatsApp Number</label>
+                        <input
+                            type="tel"
+                            id="student-whatsapp"
+                            name="whatsapp_number"
+                            placeholder="e.g. +2348012345678"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="free-course">Choose a Free Course</label>
+                        <select id="free-course" name="course" required>
+                            <option value="" disabled selected hidden>
+                                Select a course
+                            </option>
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-level">Your Current Experience Level</label>
+                        <select id="student-level" name="experience_level" required>
+                            <option value="" disabled selected hidden>
+                                Select your experience level
+                            </option>
+                            <option value="Complete Beginner">Complete Beginner</option>
+                            <option value="Basic Knowledge">I have basic knowledge</option>
+                            <option value="Intermediate">Intermediate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-goal">
+                            Why do you want to learn this course? (Optional)
+                        </label>
+                        <textarea
+                            id="student-goal"
+                            name="learning_goal"
+                            rows="4"
+                            placeholder="Tell us a little about your learning goals..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Register for Free
+                    </button>
+
+                    <p id="free-form-status" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>

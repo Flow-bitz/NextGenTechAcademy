@@ -243,3 +243,91 @@ if (menuToggle && mainNavigation) {
         }
     });
 }
+
+
+
+
+/* =====================================
+   N3XGEN FREE COURSE REGISTRATION
+===================================== */
+
+const freeRegistrationForm = document.querySelector(
+    "#free-registration-form"
+);
+
+const freeFormStatus = document.querySelector(
+    "#free-form-status"
+);
+
+if (freeRegistrationForm && freeFormStatus) {
+
+    freeRegistrationForm.addEventListener("submit", async (event) => {
+
+        event.preventDefault();
+
+        const submitButton = freeRegistrationForm.querySelector(
+            'button[type="submit"]'
+        );
+
+        const originalButtonText = submitButton.textContent;
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+        freeFormStatus.textContent = "Sending your registration...";
+
+        try {
+
+            const response = await fetch(freeRegistrationForm.action, {
+                method: "POST",
+                body: new FormData(freeRegistrationForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Registration failed.");
+            }
+
+            const formData = new FormData(freeRegistrationForm);
+
+            const name = formData.get("full_name");
+            const email = formData.get("email");
+            const whatsapp = formData.get("whatsapp_number");
+            const course = formData.get("course");
+            const level = formData.get("experience_level");
+            const goal = formData.get("learning_goal");
+
+            const message =
+                `Hello N3xGen Tech Academy!\n\n` +
+                `I have successfully registered for a free course.\n\n` +
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `WhatsApp Number: ${whatsapp}\n` +
+                `Course: ${course}\n` +
+                `Experience Level: ${level}\n` +
+                `Learning Goal: ${goal || "Not provided"}\n\n` +
+                `Please guide me on the next steps.`;
+
+            const whatsappGroupURL =
+                "https://chat.whatsapp.com/EQIoxcjTW29KjqqkPAK4zB";
+
+            freeFormStatus.textContent =
+                "Registration successful! Redirecting to WhatsApp...";
+
+            window.location.href = whatsappGroupURL;
+
+        } catch (error) {
+
+            freeFormStatus.textContent =
+                "Registration could not be completed. Please try again.";
+
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+
+            console.error("Free registration error:", error);
+        }
+
+    });
+
+}

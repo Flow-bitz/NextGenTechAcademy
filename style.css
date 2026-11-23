@@ -1857,3 +1857,195 @@ button,
     }
 }
 
+
+
+/* =====================================
+   FREE COURSE REGISTRATION PAGE
+===================================== */
+
+.free-registration-section {
+    min-height: 100vh;
+    padding: 100px 20px 80px;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(57, 134, 255, 0.13), transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(56, 217, 245, 0.10), transparent 35%),
+        var(--bg-dark);
+}
+
+.free-registration-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.free-registration-intro {
+    color: var(--text-white);
+}
+
+.free-registration-intro .course-level {
+    color: var(--cyan);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.free-registration-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.12;
+    margin-bottom: 22px;
+}
+
+.free-registration-intro > p:not(.course-level) {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.free-registration-benefits {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+}
+
+.free-registration-benefits p {
+    color: var(--text-white);
+    font-size: 0.95rem;
+}
+
+.free-registration-benefits p::first-letter {
+    color: var(--cyan);
+}
+
+.free-registration-form-card {
+    width: 100%;
+    padding: 38px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.free-registration-form-card h2 {
+    color: var(--text-white);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.free-registration-form-card > p {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+}
+
+.free-registration-form-card .form-group {
+    margin-bottom: 20px;
+}
+
+.free-registration-form-card label {
+    display: block;
+    color: var(--text-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.free-registration-form-card input,
+.free-registration-form-card select,
+.free-registration-form-card textarea {
+    width: 100%;
+    padding: 14px 15px;
+    background: var(--bg-dark);
+    color: var(--text-white);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    font: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.free-registration-form-card input:focus,
+.free-registration-form-card select:focus,
+.free-registration-form-card textarea:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px rgba(56, 217, 245, 0.1);
+}
+
+.free-registration-form-card input::placeholder,
+.free-registration-form-card textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.free-registration-form-card select {
+    cursor: pointer;
+}
+
+.free-registration-form-card textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.free-registration-form-card button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+#free-form-status {
+    color: var(--cyan);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 850px) {
+    .free-registration-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 650px;
+    }
+
+    .free-registration-intro {
+        text-align: center;
+    }
+
+    .free-registration-intro > p:not(.course-level) {
+        margin: 0 auto;
+    }
+
+    .free-registration-benefits {
+        display: inline-grid;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .free-registration-section {
+        padding: 65px 15px 50px;
+    }
+
+    .free-registration-form-card {
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    .free-registration-form-card h2 {
+        font-size: 1.45rem;
+    }
+
+    .free-registration-intro h1 {
+        font-size: 2.4rem;
+    }
+}
